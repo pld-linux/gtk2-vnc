@@ -9,3 +9,14 @@
  Version: @VERSION@
  Libs: -L${libdir} -lgvnc-1.0
  Cflags: -I${includedir}/gvnc-1.0
+--- gtk-vnc-0.9.0/gtk-vnc-1.0.pc.in.orig	2017-11-13 12:32:22.000000000 +0100
++++ gtk-vnc-0.9.0/gtk-vnc-1.0.pc.in	2020-06-24 22:01:36.031076439 +0200
+@@ -5,7 +5,7 @@
+ 
+ Name: GTK-VNC
+ Description: GTK widget for a VNC client
+-Requires: gvnc-1.0 = @VERSION@, gtk+-2.0 >= @GTK_REQUIRED@
++Requires: gvnc-1.0 >= @VERSION@, gtk+-2.0 >= @GTK_REQUIRED@
+ Version: @VERSION@
+ Libs: -L${libdir} -lgtk-vnc-1.0
+ Cflags: -I${includedir}/gtk-vnc-1.0
