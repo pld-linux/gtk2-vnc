@@ -149,9 +149,7 @@ Summary(pl.UTF-8):	API języka Vala dla biblioteki libgvnc
 Group:		Development/Languages
 Requires:	libgvnc-devel = %{version}-%{release}
 Requires:	vala
-%if "%{_rpmversion}" >= "4.6"
 BuildArch:	noarch
-%endif
 
 %description -n vala-libgvnc
 Vala API for libgvnc library.
