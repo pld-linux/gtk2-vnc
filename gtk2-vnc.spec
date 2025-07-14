@@ -171,7 +171,7 @@ Narzędzia linii poleceń do interakcji z serwerami VNC.
 
 %prep
 %setup -q -n gtk-vnc-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %{__sed} -i -e '1s,/usr/bin/python$,%{__python},' examples/gvncviewer.py
 
